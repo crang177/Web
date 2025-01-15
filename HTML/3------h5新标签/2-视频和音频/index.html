@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        video的属性：
+            1. src                ：必须存在，视频的地址
+            2. controls           ：显示控件，例如播放按钮，如果没有按钮则播放不了
+            3. autoplay           : 自动播放（但是得配合 muted（播放时静音） 一起使用） ，否则无法自动播放（浏览器的原因）
+            4. muted              ：播放时静音
+            5. loop               ：循环播放
+            6. preload            ：页面加载的时候,自动预加载资源
+            7. poster="url"       : 播放器的封面
+            8. width和height      ：播放器的宽度和高度
+    
+    -->
+
+    <video 
+        src="1.mp4"
+        controls
+        width="300px"
+        autoplay 
+        muted
+        loop
+        preload="auto"
+        poster="2.jpg"
+        > 
+            这是一个视频
+    </video>
+
+
+
+
+
+    <!--
+        audio的属性：
+            1. src                ：必须存在，视频的地址
+            2. controls           ：显示控件，例如播放按钮，如果没有按钮则播放不了
+            3. autoplay           : 自动播放（但是得配合 muted（播放时静音） 一起使用） ，否则无法自动播放（浏览器的原因）
+            4. muted              ：播放时静音
+            5. loop               ：循环播放
+            6. preload            ：页面加载的时候,自动预加载资源
+    -->
+
+    <audio 
+        src="520am.mp3"
+        controls
+        >
+
+            这是一个音乐
+    </audio>
+
+
+    <!--
+        媒介元素标签  <source>  : 定义媒介资源（如video和audio）
+            主要用于浏览器的编码方式不同时提高容错
+    -->
+    <audio controls>
+        <source src="520am.mp3" >
+        <source src="520am.ogg" >
+    </audio>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

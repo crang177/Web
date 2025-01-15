@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        网站css简单样式:
+            style作为css的容器，利用了html的class属性
+    -->
+    <style>
+            /*
+                margin: 0 auto; 自动设置两边的距离相等，相当于居中和平分
+            */
+        .container{
+            width: 1400px;
+            margin: 0 auto; 
+            height: 30px;
+            /*background-color: rgba(255, 47, 20, 0.737);*/
+        }
+
+        .header{ /* 渲染网站头部  */
+           height: 80px;
+           background-color: rgb(74, 132, 183);
+        }
+
+        
+        .nav{  /* 渲染网页的导航页 */
+            height: 80px;
+            /* 
+                margin-top: 10px; 距离顶部10像素，指的当前容器的顶部距离上一个容器的底部的距离
+            */
+            margin-top: 10px;
+            background-color: rgb(74, 132, 183);
+        }
+
+        .main{
+            height: 600px;
+            margin-top: 10px;
+        }
+
+        .left{ /* 渲染main容器中的主要内容容器   */
+
+            /* 
+                float: left;   将竖直摆放的div容器改为向左摆放
+            */
+            float: left;
+            width: 900px;
+            height: 600px;
+            background-color: rgb(74, 132, 183);
+
+        }
+        .right{ /* 渲染main容器中的侧边栏   */
+
+            /* 
+                float: left;   将竖直摆放的div容器改为向左摆放
+            */
+            float: right;
+            width: 480px;
+            height: 600px;
+            background-color: rgb(74, 132, 183);
+
+        }
+
+        .footer{  /* 渲染网站的底部  */
+            margin-top: 19px;
+            background-color: rgb(74, 132, 183);
+            height: 50px;
+
+        }
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <div class="container" align="center">
+        <div class="header">网站的头部</div>
+
+        <div class="nav">网站导航</div>
+
+        <div class="main">
+            <div class="left">主要内容</div>
+
+            <div class="right">侧边栏</div>
+
+        </div>
+
+        <div class="footer">网站底部</div>
+
+    </div>
+</body>
+</html>
