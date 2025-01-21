@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+              letter-spacing: 10px;                         增加或减少字符间地空白
+              line-height                                   设置行高
+              overflow ：  ；                                超出的文本如何处理（hidden隐藏 ；默认visible不隐藏  ； auto 只存在一个滚动条 ；scroll 存在两个滚动条）
+              white-space : ;                               元素内的空白如何处理 （ nowrap 文本不换行 ；pre 空白被浏览器保存  ）
+                    将多余的文本使用...显示 {
+                                            white-space: nowrap;        多行文本不换行
+                                            overflow: hidden;           超过容器范围的部分隐藏
+                                            text-overflow: ellipsis;    将隐藏的部分使用 ,,,来隐藏
+                                          }
+                opacity ：；                                 透明度设置（范围 0-1）：0 表示完全透明 ，1 表示不透明
+
+
+         */   
+
+
+
+
+
+
+        .root{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: gray;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+        }
+
+        .p1{
+            letter-spacing: 10px;
+            line-height: 30px;
+        }
+
+
+
+        .root1{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(22, 216, 55);
+            margin-top: 250px;
+            opacity: 0.3;  
+        }
+        .p3{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <p class="p1">asdgasjhdad</p>
+    <div class="root">   
+        <p class="p2">adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsf
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj     
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj      
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsf
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsf
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfjbsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+            adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfj
+        </p>
+    </div>
+
+    <div class="root1">
+        <p class="p3">adhjasdjhadhavdhjzxcuuiwqheioqhkjabsfjbwejkirhioqwhdkasnckafbjqwhfadhjasdjhadhav</p>
+    </div>
+
+    </body>
+</html>

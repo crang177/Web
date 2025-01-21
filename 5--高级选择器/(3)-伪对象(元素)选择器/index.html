@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*         
+        选择器::伪元素
+        常用伪元素: before和after  。 一般搭配 content属性(文本内容)使用
+ */
+
+
+        ul::before{
+            content: "ul之前的内容";
+            color: aqua;
+        }
+
+        ul::after{
+            content: "ul之后的内容";
+        }
+
+
+        /* 在文本前面加一个小竖杠 */
+        p::before{  
+            content: '';
+            padding-left: 5px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>列表5</li>
+    </ul>
+
+
+    <p>新闻</p>
+</body>
+</html>

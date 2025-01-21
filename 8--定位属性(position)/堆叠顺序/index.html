@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+/* 
+
+        固定定位和绝对定位会脱离文档流，所以会产生堆叠现象，使用z-index属性设置值来控制堆叠的顺序，其值越大，越在最上层
+
+         */
+
+            /* 
+            1. 固定定位是相对文档定位的
+            2. 相对定位和绝对定位是相对于具有定位的父级元素定位的，如果父级元素没有定位
+                则继续向上寻找具有定位的元素，如果都没有，则相对文档定位
+        */
+
+
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+            position: absolute;
+            z-index: 60;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top:50px;
+            z-index: 10;
+
+ 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box"></div>
+</body>
+</html>

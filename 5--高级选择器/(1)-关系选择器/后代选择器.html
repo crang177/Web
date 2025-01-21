@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+
+    <style>
+        /* 
+            后代选择器是将所有子代都改变
+                父选择器 空格 子选择器{
+
+            } 
+        */
+
+
+
+        ul li{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>子列表</li>
+        <li>
+            <ul>
+                <li>孙子</li>
+                <li>
+                    <ul>
+                        <li>重孙子</li>
+                        <li>重孙子</li>
+                        <li>重孙子</li>
+                    </ul>
+                </li>
+                <li>孙子</li>
+            </ul>
+        </li>
+        <li>子列表</li>
+    </ul>
+</body>
+</html>

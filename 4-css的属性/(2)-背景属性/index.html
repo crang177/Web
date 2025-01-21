@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /* 
+            background-color                           背景颜色
+            background-image: url("")                  设置背景图片
+            background-repeat: repeat;                 平铺方式（repeat默认），repeat-x只平铺x轴方向上的，no-repeat不平铺
+            background-size                            图片的大小（可以写成宽和高为多少px；或者更推荐cover值，尽可能撑满）
+            background-position                        图像地起始位置，两个值，第一个是在x轴方向上，第二个在y轴方向上，如left left为默认左上角位置。 更推荐center指屏幕中心开始（只有一个center时，为两个center的缩写）
+            background-attachment                      背景随着页面滚动是固定的还是跟着滚动的。scroll跟着滚动（默认），fixed固定的
+
+        
+        */
+
+
+
+        .root{
+            width: 800px;
+            height: 600px;
+            background-color: gray;
+        }
+        
+        .main{
+           width: 600px;
+           height: 600px;
+           background-image: url("2.png"); 
+           /* background-repeat: repeat-x; */
+           background-size: cover;
+           background-position: right left;
+           background-attachment: scroll;
+
+
+           /* 
+                上面等价于
+                    background-size:  34px;
+                    background: url("2.png") repeat-x center scroll;
+
+                    即存在顺序：background-image -- background-repeat  --  background-position --  ackground-attachment
+                    background-size得单独写
+
+            */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="root">
+        <div class="main"></div>
+    </div>
+</body>
+</html>

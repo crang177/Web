@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        /*
+             list-style-type                 类表项标记的类型（dics实心圆 默认；circle空心圆 ；square实心方块 ；decimal数字）
+             list-style-image : url("")      设置类表项标记为自定义图片
+             list-style-position             类表项标记相对于li标签的位置（inside 和 outside默认 ）
+         */
+
+
+
+
+
+
+        .ul1{
+            list-style-type: circle;
+        }
+
+
+        .ul2{
+            list-style-image: url("1.jpg");
+            list-style-position: inside;
+        }
+        .ul3{
+            list-style-image: url("1.jpg");
+            list-style-position: outside;
+        }
+
+
+        
+        li{
+            border: 1px solid blue;
+        }
+
+        .li{
+            border: 1px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <ul class="ul1">
+        <li>列表</li>
+        <li>列表</li>
+        <li>列表</li>
+    </ul>
+    <br><br><br>
+
+    <ul class="ul2">
+        <li>列表 </li>
+        <li>列表</li>
+        <li>列表</li>
+    </ul>
+
+    <ul class="ul3">
+        <li class="li">列表 </li>
+        <li class="li">列表</li>
+        <li class="li">列表</li>
+    </ul>
+</body>
+</html>

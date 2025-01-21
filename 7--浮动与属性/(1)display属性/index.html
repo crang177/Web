@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* 
+        displayd属性的作用:
+            1.显示或隐藏元素(隐藏的值为none ,隐藏后原位置不保留,会被后面的元素占据)
+            2.改变元素类型(三个值): 
+                i.   block            将元素转为块级元素( 块级元素(div,p)独占一行，可修改大小 )
+                ii.  inline           将元素修改为行内元素( 行内元素(h1，span)不独占一行，水平摆放，不可修改大小 )
+                iii. inline-block     将元素修改为行内块级元素  ( 行内块级元素(a)不独占一行 ，水平摆放，但是可以修改大小  )
+ */
+
+
+
+
+
+        .box1{
+            width: 400px;
+            height: 222px;
+            background-color: aqua;
+            display: none;
+        }
+
+
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            
+        }
+        .p1{
+            background-color: blue;
+            display: inline;
+        }
+
+        .a1{
+            width: 50px;
+            height: 50px;
+            background-color: burlywood;
+            margin: 10px;
+            padding: 10px;
+            display: block;
+        }
+
+        .a2{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(174, 218, 17);
+            margin: 10px;
+            padding: 10px;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        wdkjawdhkawdwdiowowdjodopq
+        
+    </div>
+    <p >
+        iojhoihuiqwd
+    </p>
+
+
+    <div class="box2">
+        <p class="p1">为人父未</p>
+        <p class="p1">未付款了马萨</p>
+
+
+        <a href="#" class="a1">超链接 </a>
+        <a href="#" class="a1">超链接 </a>
+
+
+        <a href="#" class="a2">超链接2</a>
+        <a href="#" class="a2">超链接2 </a>
+    </div>
+
+
+
+</body>
+</html>

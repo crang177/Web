@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+/*         
+        浮动float属性： 元素在哪个方向上移动，任何元素都可以浮动
+            1. 使元素脱离文档流 （相当于又加了一层，然后覆盖掉原来的页面）
+            2. 只存在左右浮动（ left 和 right ） ，没有上下浮动
+            3. 默认时水平摆放（横向摆放）
+            4. 如果一个容器的width不够，则会自动换行到下一行进行摆放
+     */
+
+
+
+        .container{
+            width:100%;
+            height: 300px;
+            background-color: gray
+        }   
+          .box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: right;
+
+        }   
+
+
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            margin: 0 auto;
+            border: 5px solid yellow;
+        }
+
+        ul{
+            text-align:center;
+            vertical-align: center;
+        }
+        ul>li{
+            width:200px;
+            height: 200px;
+            background-color: red;
+            margin: 10px;
+            list-style-type: none;
+            float: left;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container"></div>  
+
+    <div class="box1">
+        <ul class="list">
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>列表4</li>
+        </ul>  
+    </div>
+    
+</body>
+</html>

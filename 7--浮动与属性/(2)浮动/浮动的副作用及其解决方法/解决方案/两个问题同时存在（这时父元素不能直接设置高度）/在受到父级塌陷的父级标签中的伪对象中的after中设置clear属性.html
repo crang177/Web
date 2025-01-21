@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        
+        .container{
+            border: 10px solid red;    
+        }
+
+/* 
+        在::after中这三个要一起使用
+            content: '';
+            display: block;
+            clear: both;
+ */
+
+        .container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+
+
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 5px;
+            float: left;
+        }
+
+        .box1{
+
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="box1"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/*  
+        nth-child(n)        匹配父元素的第n个子元素,n可以为数字和关键字(odd奇数和even偶数)
+  */
+        ul:first-child  li:nth-child(3){
+            color: red;
+        }
+
+        ul:nth-child(2) li:nth-child(odd){
+            color: green;
+        }
+
+        ul:last-child li:nth-child(even){
+            color: rgb(208, 230, 17);
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>列表4</li>
+            <li>列表5</li>
+        </ul>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>列表4</li>
+            <li>列表5</li>
+        </ul>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>列表4</li>
+            <li>列表5</li>
+        </ul>
+
+</body>
+</html>

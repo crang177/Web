@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+/*         
+        固定定位fixed :
+            四个属性
+                left    向右移动多少px
+                top     向下移动多少px
+                right   向左移动多少px
+                bottom  向上移动多少px
+
+        特点: 样式不会随着页面的滚动而滚动（这是与绝对定位的区别）
+ */
+
+
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: #333;
+            position: absolute;
+            z-index: 6;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top:50px;
+            z-index: 10;
+
+ 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box"></div>
+</body>
+</html>
