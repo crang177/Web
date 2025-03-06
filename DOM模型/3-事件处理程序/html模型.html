@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    HTML事件处理程序：
+        优点： 写起来方便
+        缺点： HTML和js不分离，各干各的事情，互相耦合性太强了
+         -->
+    <button onclick="clickHandle()">按钮</button>
+    <p id="text"></p>
+    <script>
+        function clickHandle(){
+            var text=document.getElementById("text")
+            text.innerHTML="点击了我"
+        }
+    </script>
+</body>
+</html>

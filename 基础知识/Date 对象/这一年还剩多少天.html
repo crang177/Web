@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var today=new Date();
+        var endYear=new Date(today.getFullYear(),11,31,23,59,59,999)
+
+        var day=Math.round((endYear.getTime()-today.getTime())/1000/60/60/24);
+        console.log(day)
+    </script>
+</body>
+</html>

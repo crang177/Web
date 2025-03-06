@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //时间戳转为时间
+        function timestampToTime(timestamp){
+            var date=new Date(timestamp);
+
+            var y=date.getFullYear();
+            var m=date.getMonth()+1;
+            var d=date.getDate();
+            var h=date.getHours();
+            var min=date.getMinutes()>10?date.getMinutes():"0"+date.getMinutes();
+            var s=date.getSeconds()>10?date.getSeconds():"0"+date.getSeconds();
+
+            return time=y+"-"+m+"-"+d+"  "+h+":"+min+":"+s
+        }
+
+        var time=timestampToTime(1737716444927)
+        console.log(time)
+
+
+
+        //时间转时间戳
+        var date=new Date("2025-1-24  19:00:44")
+        console.log(date/1000)
+
+
+
+
+    </script>
+</body>
+</html>

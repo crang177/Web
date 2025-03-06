@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form >
+        <input type="text">
+    </form>
+    <form >
+        <input type="submit" value="提交">
+    </form>
+    <div>
+        <img src="1.jpg" alt="">
+        <img src="1.png" alt="">
+    </div>
+
+    <script>
+        // console.log(document.doctype)
+        console.log(document.documentElement)
+        console.log(document.body)
+        console.log(document.head)
+        console.log(document.forms)
+        
+        console.log(document.images)
+        var images=document.images;
+        for (var i =0;i<images.length;i++){
+            console.log(images[i].src)
+        }
+
+        
+        
+
+
+    </script>
+
+
+</body>
+</html>

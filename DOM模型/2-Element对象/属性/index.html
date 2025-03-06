@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv" class="myDiv"></div>
+
+    
+
+    <script>
+        var div=document.getElementById("myDiv")
+        console.log(div.id)
+        div.id="my"
+        console.log(div.id)
+
+
+        console.log(div.className)
+        div.className="c1"
+        console.log(div.className)
+
+        div.classList.add("asjhbd","c2","aa")
+
+        div.classList.remove("c2","aa")
+
+        console.log(div.classList.contains("c1"))
+        console.log(div.classList.contains("c2"))
+
+        div.classList.toggle("c1")
+        div.classList.toggle("c2")
+
+        div.innerHTML='<a href="https://www.baidu.com">百度</a>'
+        // div.innerText='<a href="https://www.baidu.com">百度</a>'
+
+        div.append
+
+    </script>
+</body>
+</html>

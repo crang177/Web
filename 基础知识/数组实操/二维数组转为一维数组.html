@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr_two=[1,2,3,[4,5],6,[7,8,9]],arr=[];
+        for (var i=0 ;i<arr_two.length;i++){
+            if (!Array.isArray(arr_two[i]))  arr.push(arr_two[i]);
+            else {
+                for (var j=0;j<arr_two[i].length;j++) {
+                    arr.push(arr_two[i][j]);
+                }
+            }
+        }
+        console.log(arr)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var div=document.createElement("div")
+        var body=document.getElementsByTagName("body")
+        body[0].appendChild(div)
+
+
+        var text=document.createTextNode("动态创建标签")
+        div.appendChild(text)
+
+
+        var attr=document.createAttribute("class")
+        attr.value="box"
+        div.setAttributeNode(attr)
+    </script>
+</body>
+</html>

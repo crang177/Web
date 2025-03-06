@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list" style="list-style: none;">
+        <li>sxt</li>
+        <li>中文</li>
+        <li>java</li>
+        <li>python</li>
+        <p style="display: inline;">hhhh</p>
+    </ul>
+
+    <script>
+        var list=document.getElementById("list")
+
+        list.onclick=function(e){
+            if(e.target.nodeName==="LI"){
+                console.log(e.target.innerHTML)
+            }
+            
+        }
+
+        var li=document.createElement("li")
+        li.textContent="c++"
+        list.appendChild(li)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    DOM0级事件处理程序：
+        优点：html和js进行了分离
+        缺点：事件会被覆盖，两个同名事件，下面的会覆盖掉上面的 
+-->
+
+    <button id="btn">按钮</button>
+    <p id="text">点击之前</p>
+    <script>
+        var btn=document.getElementById("btn");
+        var text=document.getElementById("text");
+
+        btn.onclick=function() {
+            text.innerHTML="第一次点击"
+            console.log(text.innerHTML)
+        }
+
+        btn.onclick=function() {
+            text.innerHTML="第二次点击"
+            console.log(text.innerHTML)
+        }
+        // 也就是说会打印“第二次点击”，而不执行 “第一次点击”
+
+        // btn.onclick=null    //移除事件，令属性等于null
+    </script>
+</body>
+</html>
